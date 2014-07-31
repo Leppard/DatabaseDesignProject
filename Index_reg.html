@@ -34,7 +34,7 @@
             <li><a href="Group.html">小组</a></li>
              <li><a href="Search.html">搜索</a></li>
             <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
-           <!--  <li>
+            <!-- <li>
               <form  class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                    <input  type="text" class="form-control" placeholder="输入你想学的技能"/>
@@ -44,9 +44,13 @@
             </li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a href="../navbar/">Default</a></li> -->
-            <li><a href="Signin.html">登录</a></li>
-            <li><a href="Reg.html">注册</a></li>
+           <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">管理员xxx<span class="caret"></span>
+              </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="Index.html">注销</a></li>
+                </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

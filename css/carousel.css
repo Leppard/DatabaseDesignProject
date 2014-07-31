@@ -40,10 +40,10 @@ body {
 .jumbotron {
   height: 500px;
   margin-bottom: 60px;
-  background: url(../image/backgroundimg.png) no-repeat top;
+  background: url(../image/frontpage.jpg) no-repeat top;
   background-size: 100%;
   /*background-color: #779;*/
-  color:#FF5151;
+  color:#A3D1D1;
 
 }
   
