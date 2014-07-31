@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>技能交换网-小组</title>
+    <title>技能交换网-小组话题</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -52,6 +52,8 @@
               <a class="dropdown-toggle" data-toggle="dropdown">管理员xxx<span class="caret"></span>
               </a>
                 <ul class="dropdown-menu" role="menu">
+                  <li><a href="Edit_pw.html">修改密码</a></li>
+                  <li><a href="Edit.html">修改信息</a></li>
                     <li><a href="Index.html">注销</a></li>
                 </ul>
             </li>
@@ -91,9 +93,10 @@
                     <div class="page-header">
                         <h1 style="color:#ff7575">小组名xxx&nbsp&nbsp<small>小组话题</small></h1>
                     </div>
-                    <br><br>
+                    <br>
       <div class="bs-docs-section">
         <p style="color:white">Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+        <br>
         <div class="bs-example">
 
           <div class="list-group">
@@ -105,9 +108,6 @@
             <button type="button" class="btn btn-default" onclick="deleteWish(this.parentNode.id)"> 
               <img id="before1" onclick="changeImage('before1')" src="image/before.jpg" width="73" height="26">
             </button>
-            <a href="Contact.html" class="button button-rounded button-primary">
-              <span class="glyphicon glyphicon-envelope"></span>&nbsp我要评论
-            </a> 
             <p></p>   
           </div>
           <div id="002">
@@ -118,9 +118,7 @@
             <button type="button" class="btn btn-default" onclick="deleteWish(this.parentNode.id)"> 
               <img id="before2" onclick="changeImage('before2')" src="image/before.jpg" width="73" height="26">
             </button>
-            <a href="Contact.html" class="button button-rounded button-primary">
-              <span class="glyphicon glyphicon-envelope"></span>&nbsp我要评论
-            </a> 
+ 
             <p></p>   
             </div>
             <div id="003">
@@ -131,9 +129,7 @@
             <button type="button" class="btn btn-default" onclick="deleteWish(this.parentNode.id)"> 
               <img id="before3" onclick="changeImage('before3')" src="image/before.jpg" width="73" height="26">
             </button>
-            <a href="Contact.html" class="button button-rounded button-primary">
-              <span class="glyphicon glyphicon-envelope"></span>&nbsp我要评论
-            </a>  
+
             <p></p>   
             </div>
             <div id="004">
@@ -144,18 +140,42 @@
             <button type="button" class="btn btn-default" onclick="deleteWish(this.parentNode.id)"> 
               <img id="before4" onclick="changeImage('before4')" src="image/before.jpg" width="73" height="26">
             </button>
-            <a href="Contact.html" class="button button-rounded button-primary">
-              <span class="glyphicon glyphicon-envelope"></span>&nbsp我要评论
-            </a>  
             <p></p>   
             </div>
         </div>
       </div>
       </div>
-                    </div>
-               
-                    
+
+<!--       <br><br><br>
+              <div class="col-md-12 column">
+                   <a href="#" class="button button-rounded button-primary btn-lg">
+              <span class="glyphicon glyphicon-envelope"></span>&nbsp我要评论
+            </a>       
+            </div>   --> 
+            <br><br><hr>
+ <div class="row clearfix">
+                            
+                        <form>
+                            <div class="col-md-9 column">
+                                <textarea  class="form-control" rows="4"></textarea>
+                                
+                            </div>
+                            <div class="col-md-3 column">
+                                <br>
+                                <p><button class="btn btn-info btn-md btn-block" role="button" type="submit" formaction="user!add">发表评论<span class="glyphicon glyphicon-send"></span></button></p>
+                            </div> 
+                              
+                        </form>
+                        </div>
+
+    </div>
+            <div class="col-md-2 column">
+                <br><br><br><br><br><br>
+                <button class="btn btn-danger">删除小组</button>
+            </div>
+                      
 		</div>
+
     <!-- <br><br><br><br><br><br><br><br><br>
       <div class="col-md-2 column">
       </div>
@@ -174,10 +194,7 @@
                             <a href="#" class="list-group-item">Link</a>
                           </div>
                          </div> -->
-
-
 	</div>
-</div>
       
       
 

@@ -8,11 +8,10 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>技能交换网-密码修改</title>
+    <title>技能交换网－登录</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -28,7 +27,7 @@
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body style="background-image:url(image/bg1.jpg); background-attachment: fixed">
+  <body style="background-image:url(image/bg1.jpg); background-size:100%; background-repeat:no-repeat">
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -42,11 +41,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="Index_reg.html">首页</a></li>
+            <li><a href="Index.html">首页</a></li>
             <li><a href="Group.html">小组</a></li>
-            <li><a href="Search.html">搜索</a></li>
+             <li><a href="Search.html">搜索</a></li>
             <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
-           <!--  <li>
+            <!-- <li>
               <form  class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                    <input  type="text" class="form-control" placeholder="输入你想学的技能"/>
@@ -57,16 +56,8 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <!-- <li><a href="../navbar/">Default</a></li> -->
-            
-            <li role="presentation" class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown">管理员xxx<span class="caret"></span>
-              </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="Edit_pw.html">修改密码</a></li>
-                  <li><a href="Edit.html">修改信息</a></li>
-                    <li><a href="Index.html">注销</a></li>
-                </ul>
-            </li>
+            <li class="active"><a href="#">登录</a></li>
+            <li><a href="Reg.html">注册</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -87,71 +78,35 @@
                     <br>
                     <br>
                     <div class="page-header">
-                        <h2 style="color:#ff7575">密码修改</h2>        
+                        <h2 style="color:white">创建小组</h2>        
 			</div>  
-                    <h5 style="color:#FFD2D2">同济大学技能交易平台</h5>
-                    <form style="color:whitesmoke">
-                        
+                    <h5 style="color:whitesmoke">同济大学技能交易平台</h5>
+                    <form>
                         <br><br>
-                        用户名
                         <div class="form-group">
-                           <input name="userDTO.username" type="text"  class="form-control"
-                                   readonly="readonly">          
+                           <input name="userDTO.name" type="text" placeholder="小组名称" class="form-control">          
                         </div>
                         
-                        
-                        
-                        当前密码
                         <div class="form-group">
-                          <input name="userDTO.password" type="password"  class="form-control">
-                        </div>
-                        
-                        新密码
-                        <div class="form-group">
-                          <input name="userDTO.password" type="password"  class="form-control">
+                            <textarea placeholder="小组简介" name="userDTO.introduction" class="form-control" rows="4"></textarea>          
                         </div>
 
-                        重复新密码
-                        <div class="form-group">
-                          <input name="userDTO.password" type="password"  class="form-control">
-                        </div>
-                        
-                        
-                        <br><br>
-                       
-                        <div class="col-md-6 column">
-                            <p><button class="btn btn-success btn-lg btn-block" role="button" type="submit" formaction="user!add">提交 &raquo;</button></p>
-                            
-                        </div>
-                        <div class="col-md-6 column">
-                            <p><button class="btn btn-danger btn-lg btn-block" role="button" type="" formaction="">取消</button></p>
-                        </div>
-                        
+                        <br>
+                        <p><button class="btn btn-success btn-lg btn-block" role="button" type="submit" formaction="user!add">创建 &raquo;</button></p>
 
 
-                        
                     </form>
                     
                
                     
 		</div>
-                <div class="col-md-3 column">
-
-                    
-               
-                    
-		</div>
+                <div class="col-md-3 column">                 
+		            </div>
 	</div>
 </div>
-      
-      
-
-    
-
       <br><br><br><br><br><br><br><br>
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
